@@ -89,10 +89,10 @@
 
         nav {
             bindings = <
-&trans  &kp N1  &kp N2    &kp N3   &kp N4   &kp N5                     &kp N6    &kp N7        &kp N8         &kp N9       &kp N0         &trans
-&trans  &trans  &trans    &trans   &trans   &kp RET                    &trans    &kp LEFT      &kp DOWN       &kp UP       &kp RIGHT      &trans
-&trans  &trans  &kp HOME  &kp INS  &kp END  &kp DEL                    &kp CLCK  &kp LC(LEFT)  &kp PAGE_DOWN  &kp PAGE_UP  &kp LC(RIGHT)  &trans
-                &trans    &trans   &trans   &trans   &trans    &trans  &mo 5     &trans        &trans         &trans
+&trans  &trans  &kp N2    &kp UP    &kp N4           &trans                     &trans    &kp N7        &kp N8        &kp N9        &trans  &trans
+&trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT_ARROW  &kp RET                    &trans    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans
+&trans  &trans  &kp HOME  &kp INS   &kp END          &kp DEL                    &kp CLCK  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans
+                &trans    &trans    &trans           &trans   &trans    &trans  &mo 5     &trans        &kp NUMBER_0  &trans
             >;
 
             display-name = "nav";
