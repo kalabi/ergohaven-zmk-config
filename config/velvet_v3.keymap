@@ -17,7 +17,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        Base {
+        base {
             bindings = <
 &kp ESC    &kp Q  &kp W         &kp E     &kp R             &kp T                           &kp Y  &kp U          &kp I      &kp O     &kp P     &kp BSPC
 &kp TAB    &kp A  &kp S         &kp D     &kp F             &kp G                           &kp H  &kp J          &kp K      &kp L     &kp SEMI  &kp BSLH
@@ -28,7 +28,7 @@
             display-name = "Base";
         };
 
-        Navigation {
+        nav {
             bindings = <
 &trans  &trans  &trans          &kp UP     &trans           &trans                     &trans    &kp N7        &kp N8        &kp N9        &trans  &trans
 &trans  &trans  &kp LEFT_ARROW  &kp DOWN   &kp RIGHT_ARROW  &kp RET                    &trans    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans
@@ -39,7 +39,7 @@
             display-name = "Navigation";
         };
 
-        Symbols {
+        sym {
             bindings = <
 &trans  &trans    &kp LT    &kp EQUAL  &kp GT    &kp GRAVE                      &kp CARET  &kp DQT    &kp UNDER  &kp SQT       &trans    &trans
 &trans  &kp BSLH  &kp LPAR  &kp MINUS  &kp RPAR  &kp PLUS                       &kp PRCNT  &kp COMMA  &kp DOT    &kp QUESTION  &kp EXCL  &kp QUESTION
@@ -50,7 +50,7 @@
             display-name = "Symbols";
         };
 
-        Adjust {
+        adj {
             bindings = <
 &bootloader  &none  &kp F1  &kp F2   &kp F3   &kp F4                   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
 &none        &none  &kp F5  &kp F6   &kp F7   &kp F8                   &out OUT_BLE  &kp C_VOL_DN  &kp K_MUTE        &kp C_VOL_UP  &none         &studio_unlock
