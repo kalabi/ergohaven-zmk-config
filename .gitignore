@@ -1,0 +1,9 @@
+# West workspace
+.west/
+zmk/
+modules/
+zephyr/
+
+# Build artifacts
+build/
+firmware/

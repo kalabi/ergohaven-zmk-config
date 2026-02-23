@@ -16,7 +16,7 @@
 
         cmbru {
             bindings = <&layer_ru>;
-            key-positions = <3 4>;
+            key-positions = <8 7>;
             layers = <0>;
         };
     };
@@ -82,10 +82,10 @@
 
         en {
             bindings = <
-&kp ESC    &kp Q  &kp W      &kp E     &kp R      &kp T                                   &kp Y  &kp U     &kp I      &kp O     &kp P     &kp BSPC
-&kp TAB    &kp A  &kp S      &kp D     &kp F      &kp G                                   &kp H  &kp J     &kp K      &kp L     &kp SEMI  &kp BSLH
-&kp LSHFT  &kp Z  &kp X      &kp C     &kp V      &kp B                                   &kp N  &kp M     &kp COMMA  &kp DOT   &kp SQT   &kp RSHFT
-                  &kp GRAVE  &kp LGUI  &kp LCTRL  &mo 2  &mt LEFT_SHIFT SPACE    &kp RET  &mo 3  &kp LALT  &kp LBKT   &kp RBKT
+&kp ESC    &kp Q  &kp W         &kp E             &kp R         &kp T                                   &kp Y  &kp U     &kp I      &kp O     &kp P     &kp BSPC
+&kp TAB    &kp A  &kp S         &kp D             &kp F         &kp G                                   &kp H  &kp J     &kp K      &kp L     &kp SEMI  &kp BSLH
+&kp LSHFT  &kp Z  &kp X         &kp C             &kp V         &kp B                                   &kp N  &kp M     &kp COMMA  &kp DOT   &kp SQT   &kp RSHFT
+                  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_WIN  &mo 2  &mt LEFT_SHIFT SPACE    &kp RET  &mo 3  &kp LALT  &kp LBKT   &kp RBKT
             >;
 
             display-name = "Base";
@@ -103,10 +103,10 @@
 
         nav {
             bindings = <
-&trans  &kp N1  &kp N2    &kp N3   &kp N4   &kp N5                     &kp N6    &kp N7        &kp N8         &kp N9       &kp N0         &trans
-&trans  &trans  &trans    &trans   &trans   &kp RET                    &trans    &kp LEFT      &kp DOWN       &kp UP       &kp RIGHT      &trans
-&trans  &trans  &kp HOME  &kp INS  &kp END  &kp DEL                    &kp CLCK  &kp LC(LEFT)  &kp PAGE_DOWN  &kp PAGE_UP  &kp LC(RIGHT)  &trans
-                &trans    &trans   &trans   &trans   &trans    &trans  &mo 5     &trans        &trans         &trans
+&trans  &trans  &kp LC(LEFT)  &kp UP    &kp LC(RIGHT)  &trans                     &kp PAGE_UP    &kp N7        &kp N8        &kp N9        &kp N0         &trans
+&trans  &trans  &kp LEFT      &kp DOWN  &kp RIGHT      &kp RET                    &kp PAGE_DOWN  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans         &trans
+&trans  &trans  &kp HOME      &kp INS   &kp END        &kp DEL                    &kp CLCK       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LC(RIGHT)  &trans
+                &trans        &trans    &trans         &trans   &trans    &trans  &mo 5          &trans        &kp NUMBER_0  &trans
             >;
 
             display-name = "nav";
@@ -115,10 +115,10 @@
 
         sym_en {
             bindings = <
-&trans  &kp HASH   &kp LT    &kp EQUAL  &kp GT    &kp GRAVE                    &kp CARET  &kp DQT   &kp UNDER  &kp SQT   &trans    &trans
-&trans  &kp BSLH   &kp LPAR  &kp MINUS  &kp RPAR  &kp PLUS                     &kp PRCNT  &kp LBRC  &kp SEMI   &kp RBRC  &kp EXCL  &kp QUESTION
-&trans  &kp COMMA  &kp STAR  &kp COLON  &kp FSLH  &kp DLLR                     &kp AT     &kp PIPE  &kp TILDE  &kp AMPS  &kp DOT   &trans
-                   &trans    &trans     &trans    &mo 5      &trans    &trans  &trans     &trans    &kp LBKT   &kp RBKT
+&trans  &kp HASH   &kp LT    &kp EQUAL       &kp GT    &kp GRAVE                    &kp CARET  &kp DQT    &kp RU_CYRILLIC_HA  &kp SQT       &trans    &trans
+&trans  &kp BSLH   &kp LPAR  &kp MINUS       &kp RPAR  &kp PLUS                     &kp PRCNT  &kp COMMA  &kp DOT             &kp QUESTION  &kp EXCL  &kp SLASH
+&trans  &kp COMMA  &kp STAR  &kp UNDERSCORE  &kp FSLH  &kp DLLR                     &kp AT     &kp PIPE   &kp TILDE           &kp AMPS      &kp DOT   &trans
+                   &trans    &trans          &trans    &mo 5      &trans    &trans  &trans     &trans     &kp LBKT            &kp RBKT
             >;
 
             display-name = "Symbols";
@@ -127,10 +127,10 @@
         sym_ru {
             display-name = "Sym ru";
             bindings = <
-&trans         &en HASH          &en LT    &kp EQUAL     &en GT       &en GRAVE                    &en CARET  &kp RU_DQT  &kp UNDER    &en SQT   &trans      &trans
-&kp RU_NUMERO  &kp RU_BACKSLASH  &kp LPAR  &kp MINUS     &kp RPAR     &kp PLUS                     &kp PRCNT  &en LBRC    &kp RU_SEMI  &kp RBRC  &kp EXCL    &kp RU_QMARK
-&trans         &kp RU_COMMA      &kp STAR  &kp RU_COLON  &kp RU_FSLH  &en DLLR                     &en AT     &en PIPE    &en TILDE    &en AMPS  &kp RU_DOT  &trans
-                                 &trans    &trans        &trans       &mo 5      &trans    &trans  &trans     &trans      &en LBKT     &en RBKT
+&trans         &en HASH          &en LT    &kp EQUAL       &en GT       &en GRAVE                    &en CARET  &kp RU_DQT    &kp RU_CYRILLIC_HA  &en SQT          &trans      &trans
+&kp RU_NUMERO  &kp RU_BACKSLASH  &kp LPAR  &kp MINUS       &kp RPAR     &kp PLUS                     &kp PRCNT  &kp RU_COMMA  &kp RU_DOT          &kp RU_QUESTION  &kp EXCL    &kp RU_SLASH
+&trans         &kp RU_COMMA      &kp STAR  &kp UNDERSCORE  &kp RU_FSLH  &en DLLR                     &en AT     &en PIPE      &en TILDE           &en AMPS         &kp RU_DOT  &trans
+                                 &trans    &trans          &trans       &mo 5      &trans    &trans  &trans     &trans        &en LBKT            &en RBKT
             >;
         };
 
