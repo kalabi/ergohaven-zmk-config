@@ -75,6 +75,13 @@
             wait-ms = <0>;
             tap-ms = <30>;
         };
+
+        alt_f12: alt_f12 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(F12)>;
+            label = "ALT_F12";
+        };
     };
 
     keymap {
@@ -103,10 +110,10 @@
 
         nav {
             bindings = <
-&trans  &trans  &kp LC(LEFT)  &kp UP    &kp LC(RIGHT)  &trans                     &kp PAGE_UP    &kp N7        &kp N8        &kp N9        &kp N0         &trans
-&trans  &trans  &kp LEFT      &kp DOWN  &kp RIGHT      &kp RET                    &kp PAGE_DOWN  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans         &trans
-&trans  &trans  &kp HOME      &kp INS   &kp END        &kp DEL                    &kp CLCK       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LC(RIGHT)  &trans
-                &trans        &trans    &trans         &trans   &trans    &trans  &mo 5          &trans        &kp NUMBER_0  &trans
+&kp LG(N1)  &kp LG(NUMBER_2)  &kp LC(LEFT)  &kp UP    &kp LC(RIGHT)  &trans                     &kp PAGE_UP    &kp N7        &kp N8        &kp N9        &kp N0         &trans
+&kp LG(N3)  &kp LG(N4)        &kp LEFT      &kp DOWN  &kp RIGHT      &kp RET                    &kp PAGE_DOWN  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans         &trans
+&alt_f12    &trans            &kp HOME      &kp INS   &kp END        &kp DEL                    &kp CLCK       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LC(RIGHT)  &trans
+                              &trans        &trans    &trans         &trans   &trans    &trans  &mo 5          &trans        &kp NUMBER_0  &trans
             >;
 
             display-name = "nav";
